@@ -95,3 +95,37 @@ N.B: Make sure to install all dependencies using composer install before proceed
    Method: GET
    
    Response: A JSON array of subjects for each academic year.
+
+## Bash_scripts/
+
+### health_check.sh
+Logs CPU, memory, disk usage
+
+Checks API and Apache status
+
+### Output: /var/log/health_check.log
+
+### backup_api.sh
+Backs up Laravel files and MySQL DB
+
+Keeps backups in /home/ubuntu/backups
+
+Deletes backups older than 7 days
+
+### Output: /var/log/backup.log
+
+### update_server.sh
+Updates system packages
+
+Pulls latest changes from GitHub
+
+Restarts Apache
+
+### Output: /var/log/update_server.log
+
+## How to run scripts:
+```bash
+chmod +x scriptname.sh
+./scriptname.sh
+
+```
