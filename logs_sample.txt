@@ -4,22 +4,10 @@
 2025-04-23 03:57:11 - CPU: 4.8% | Memory: 767/914MB | Disk: 44% | Apache: active | /students: 200 | /subjects: 200
 
 #Backup Logs
-mysqldump: [Warning] Using a password on the command line interface can be insecure.
 2025-04-21 10:04:18 - Backup completed.
-tar: Removing leading `/' from member names
-mysqldump: [Warning] Using a password on the command line interface can be insecure.
 2025-04-22 04:50:38 - Backup completed.
 
 #Update Logs
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Calculating upgrade...
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-From https://github.com/Lyatuujacquisdo/SimpleAPI
- * branch            main       -> FETCH_HEAD
-Already up to date.
 2025-04-22 05:17:09 - Git pull successful.
 2025-04-22 05:17:09 - Apache restarted.
 
