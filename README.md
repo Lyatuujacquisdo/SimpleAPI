@@ -96,6 +96,35 @@ N.B: Make sure to install all dependencies using composer install before proceed
    
    Response: A JSON array of subjects for each academic year.
 
+   # Assignment 2.
+## Backup Schemes
+###  1. Full Backup
+Description: Backs up the entire system (files + database).
+
+Execution: All files and data are copied each time.
+
+Pros: Complete recovery.
+
+Cons: Time- and storage-consuming.
+
+### 2. Incremental Backup
+Description: Backs up only the changes since the last backup (full or incremental).
+
+Execution: Requires previous backup history.
+
+Pros: Saves space and time.
+
+Cons: Restoring takes longer (needs all incremental + full).
+
+### 3. Differential Backup
+Description: Backs up changes since the last full backup.
+
+Execution: Simpler than incremental for restoring.
+
+Pros: Faster to restore than incremental.
+
+Cons: Takes more space than incremental but less than full.
+
 ## Bash_scripts/
 
 ### health_check.sh
