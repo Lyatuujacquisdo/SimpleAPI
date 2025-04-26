@@ -1,0 +1,44 @@
+Attaching to laravel_app, mysql_db
+[36mlaravel_app |[0m [26-Apr-2025 07:53:16] NOTICE: fpm is running, pid 1
+[36mlaravel_app |[0m [26-Apr-2025 07:53:16] NOTICE: ready to handle connections
+[33mmysql_db |[0m 2025-04-26 07:53:15+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.44-1.el7 started.
+[33mmysql_db |[0m 2025-04-26 07:53:16+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_db |[0m 2025-04-26 07:53:16+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.44-1.el7 started.
+[33mmysql_db |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_db |[0m 2025-04-26T07:53:16.816453Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[33mmysql_db |[0m 2025-04-26T07:53:16.818506Z 0 [Note] mysqld (mysqld 5.7.44) starting as process 1 ...
+[33mmysql_db |[0m 2025-04-26T07:53:16.822067Z 0 [Note] InnoDB: PUNCH HOLE support available
+[33mmysql_db |[0m 2025-04-26T07:53:16.822096Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[33mmysql_db |[0m 2025-04-26T07:53:16.822101Z 0 [Note] InnoDB: Uses event mutexes
+[33mmysql_db |[0m 2025-04-26T07:53:16.822105Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[33mmysql_db |[0m 2025-04-26T07:53:16.822109Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+[33mmysql_db |[0m 2025-04-26T07:53:16.822118Z 0 [Note] InnoDB: Using Linux native AIO
+[33mmysql_db |[0m 2025-04-26T07:53:16.822528Z 0 [Note] InnoDB: Number of pools: 1
+[33mmysql_db |[0m 2025-04-26T07:53:16.822684Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[33mmysql_db |[0m 2025-04-26T07:53:16.827299Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[33mmysql_db |[0m 2025-04-26T07:53:16.836612Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[33mmysql_db |[0m 2025-04-26T07:53:16.839386Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[33mmysql_db |[0m 2025-04-26T07:53:16.858810Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[33mmysql_db |[0m 2025-04-26T07:53:16.888090Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[33mmysql_db |[0m 2025-04-26T07:53:16.888212Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[33mmysql_db |[0m 2025-04-26T07:53:16.908723Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[33mmysql_db |[0m 2025-04-26T07:53:16.909547Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[33mmysql_db |[0m 2025-04-26T07:53:16.909559Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[33mmysql_db |[0m 2025-04-26T07:53:16.910050Z 0 [Note] InnoDB: 5.7.44 started; log sequence number 12219281
+[33mmysql_db |[0m 2025-04-26T07:53:16.910243Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[33mmysql_db |[0m 2025-04-26T07:53:16.910612Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[33mmysql_db |[0m 2025-04-26T07:53:16.924309Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+[33mmysql_db |[0m 2025-04-26T07:53:16.924324Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+[33mmysql_db |[0m 2025-04-26T07:53:16.924327Z 0 [Warning] A deprecated TLS version TLSv1 is enabled. Please use TLSv1.2 or higher.
+[33mmysql_db |[0m 2025-04-26T07:53:16.924330Z 0 [Warning] A deprecated TLS version TLSv1.1 is enabled. Please use TLSv1.2 or higher.
+[33mmysql_db |[0m 2025-04-26T07:53:16.926174Z 0 [Warning] CA certificate ca.pem is self signed.
+[33mmysql_db |[0m 2025-04-26T07:53:16.926216Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+[33mmysql_db |[0m 2025-04-26T07:53:16.927624Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[33mmysql_db |[0m 2025-04-26T07:53:16.927661Z 0 [Note] IPv6 is available.
+[33mmysql_db |[0m 2025-04-26T07:53:16.927723Z 0 [Note]   - '::' resolves to '::';
+[33mmysql_db |[0m 2025-04-26T07:53:16.927757Z 0 [Note] Server socket created on IP: '::'.
+[33mmysql_db |[0m 2025-04-26T07:53:16.931197Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_db |[0m 2025-04-26T07:53:16.937358Z 0 [Note] InnoDB: Buffer pool(s) load completed at 250426  7:53:16
+[33mmysql_db |[0m 2025-04-26T07:53:17.010705Z 0 [Note] Event Scheduler: Loaded 0 events
+[33mmysql_db |[0m 2025-04-26T07:53:17.010885Z 0 [Note] mysqld: ready for connections.
+[33mmysql_db |[0m Version: '5.7.44'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
