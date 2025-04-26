@@ -1,16 +1,9 @@
-# SimpleAPI
+# Assignment 1: SimpleAPI
 
 SimpleAPI is a simple Laravel-based API that provides endpoints for managing student data and subjects related to the Software Engineering program. This API serves two main endpoints:
 1. `/students` - Lists students with their names and enrolled programs.
 2. `/subjects` - Lists subjects for the Software Engineering program, categorized by academic years (Year 1 to Year 4).
 
-## Table of Contents
-- [Installation](#installation)
-- [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Endpoints](#endpoints)
-
----
 
 ## Installation
 
@@ -158,3 +151,92 @@ chmod +x scriptname.sh
 ./scriptname.sh
 
 ```
+
+# Assignment 3.
+## Instructions on building docker image on the deployed API
+Step 1: Make sure docekr is installed in your EC2, you can run this command to check if docker is installed
+
+```bash
+docker --version
+```
+Step 2: If Docker isn't installed in your EC2, follow the following steps:
+-> Update packages
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
+-> Install Docker dependencies
+```bash
+sudo apt install apt-transport-https ca-certificates curl software-properties-common gnupg -y
+```
+-> Add Docker’s official GPG key
+```bash
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+-> Add Docker repo
+```bash
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+  https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+-> Install Docker Engine
+```bash
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io -y
+```
+-> Verify Docker is installed
+```bash
+docker --version
+```
+The expected output is the current version of docker
+### After installing docker, add the docker file into the Laravel project,the following steps will guide you:
+Step 1: Go to your Laravel project
+```bash
+cd /var/www/SimpleAPI
+```
+Step 2: Create a Dockerfile
+```bash
+nano Dockerfile
+```
+This will open an editor add the required information for the docker file, then save and exit.
+
+Step 3: Build the Docker image
+```bash
+docker build -t simpleapi-laravel .
+```
+After the build is completed, run the following command:
+```bash
+docker images
+```
+you can see the image created.
+
+### Instructions for deploying and managing containers using Docker Compose.
+
+Step 1: Create docker-compose.yml
+In you project directory, run the following command, it will open an editor add the necessary information for the docker-compose.yml
+```bash
+nano docker-compose.yml
+```
+Then save and exit
+
+Step 2: Update .env for Laravel 
+Edit the database configuration to much the ones in the docker-composer.yml
+
+Step 3: Start Everything with Docker Compose
+```bash
+docker-compose up -d
+```
+
+Step 4: Verify it’s running
+```bash
+docker ps
+```
+
+Step 5: Test in the Browser
+Open the url to the api
+```bash
+http://your-ec2-ip:8000/api/students
+```
+
