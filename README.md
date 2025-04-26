@@ -240,3 +240,6 @@ Open the url to the api
 http://your-ec2-ip:8000/api/students
 ```
 
+## Docker Registry Upload 
+You can acces the docker image here, the one I registered
+https://hub.docker.com/repository/docker/jacquisdo/simpleapi_app/general
