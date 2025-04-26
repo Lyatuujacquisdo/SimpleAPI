@@ -20,12 +20,12 @@ Follow the steps below to set up this project locally on your machine:
 
 Start by cloning the repository to your local machine:
 ```bash
-git clone https://github.com/Lyatuujacquisdo/StudentAPI.git
+git clone https://github.com/Lyatuujacquisdo/SimpleAPI.git
 ```
 ### 2.  Navigate to Project Directory
 Change into the project directory:
 ```bash
-cd StudentAPI
+cd SimpleAPI
 ```
 
 ### 3. Install Composer Dependencies
@@ -52,9 +52,9 @@ Update the .env file with your database credentials:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=studentapi
-DB_USERNAME=root
-DB_PASSWORD=
+DB_DATABASE=student_api
+DB_USERNAME=student_user
+DB_PASSWORD=StrongPassword123
 ```
 
 ### 7.  Run Migrations
@@ -95,6 +95,35 @@ N.B: Make sure to install all dependencies using composer install before proceed
    Method: GET
    
    Response: A JSON array of subjects for each academic year.
+
+   # Assignment 2.
+## Backup Schemes
+###  1. Full Backup
+Description: Backs up the entire system (files + database).
+
+Execution: All files and data are copied each time.
+
+Pros: Complete recovery.
+
+Cons: Time- and storage-consuming.
+
+### 2. Incremental Backup
+Description: Backs up only the changes since the last backup (full or incremental).
+
+Execution: Requires previous backup history.
+
+Pros: Saves space and time.
+
+Cons: Restoring takes longer (needs all incremental + full).
+
+### 3. Differential Backup
+Description: Backs up changes since the last full backup.
+
+Execution: Simpler than incremental for restoring.
+
+Pros: Faster to restore than incremental.
+
+Cons: Takes more space than incremental but less than full.
 
 ## Bash_scripts/
 
